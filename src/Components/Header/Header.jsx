@@ -8,19 +8,19 @@ const Header = () => {
   return (
     <header>
       <Nav>
-        <Logo src={logo} alt="AluraFlix Logo" />
+        <Logo src={logo} alt="Flix Logo" />
         <NavContainer>
           <LinkNav
             to="/"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
-            <Button>Home</Button>
+            <Button>Inicio</Button>
           </LinkNav>
           <LinkNav
             to="/new-video"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
-            <Button>New Video</Button>
+            <Button>Nuevo Video</Button>
           </LinkNav>
         </NavContainer>
       </Nav>

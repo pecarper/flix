@@ -23,7 +23,7 @@ export const VideoProvider = ({ children }) => {
         setVideos(videoData);
         setLoading(false);
       } catch (error) {
-        console.error("Error ao buscar videos", error);
+        console.error("Error al buscar video", error);
         setLoading(false);
       }
     };
@@ -35,7 +35,7 @@ export const VideoProvider = ({ children }) => {
       const addedVideo = await addVideoService(newVideo);
       setVideos((prevVideos) => [...prevVideos, addedVideo]);
     } catch (error) {
-      console.error("Erro ao adicionar vídeo", error);
+      console.error("Error al agregar video", error);
     }
   };
 
@@ -46,7 +46,7 @@ export const VideoProvider = ({ children }) => {
         prevVideos.filter((video) => video.id !== videoId)
       );
     } catch (error) {
-      console.error("Erro ao deletar video", error);
+      console.error("Error al borrar video", error);
     }
   };
 
@@ -59,7 +59,7 @@ export const VideoProvider = ({ children }) => {
         )
       );
     } catch (error) {
-      console.error("Erro ao atualizar vídeo", error);
+      console.error("Error al actualizar video", error);
     }
   };
 

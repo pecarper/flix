@@ -47,7 +47,7 @@ const NewVideo = () => {
 
   return (
     <FormContainer onSubmit={handleSubmit}>
-      <FormTitle>Adicionar Novo Vídeo</FormTitle>
+      <FormTitle>Agregar Nuevo Video</FormTitle>
       <Input
         type="text"
         name="titulo"
@@ -87,7 +87,7 @@ const NewVideo = () => {
         onChange={handleChange}
         required
       />
-      <Button type="submit">Salvar</Button>
+      <Button type="submit">Guardar</Button>
       <Button type="button" onClick={handleReset}>
         Limpar
       </Button>
