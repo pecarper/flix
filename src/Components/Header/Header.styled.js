@@ -4,9 +4,7 @@ import { NavLink } from "react-router-dom";
 export const LinkNav = styled(NavLink)`
   &.active button {
     background: #000000e5;
-    border: 0.125rem solid #2271d1;
-    box-shadow: 0px 0px 0.75rem 0.25rem #2271d1 inset;
-    color: #2271d1;
+    color: #f9fafb;
   }
 `;
 
@@ -16,12 +14,16 @@ export const Logo = styled.img`
 `;
 
 export const Nav = styled.nav`
-  box-shadow: 0px 0px 0.75rem 0.25rem #2271d1;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 4rem;
   background-color: ${({ theme }) => theme.colors.primary};
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  height: 80px;
 `;
 
 export const NavContainer = styled.div`

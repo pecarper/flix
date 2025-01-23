@@ -9,14 +9,12 @@ export const StyledButton = styled.button`
   text-align: center;
   background-color: transparent;
   color: #ffffff;
-  border: 0.125rem solid #f5f5f5;
   border-radius: 0.9375rem;
   transition: all 0.3s ease;
   cursor: pointer;
 
   &.active {
-    background: #000000e5;
-    border: 0.125rem solid #2271d1;
+    background: #330505;
     box-shadow: 0px 0px 0.75rem 0.25rem #2271d1 inset;
     color: #2271d1;
   }
